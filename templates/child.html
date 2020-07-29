@@ -2,3 +2,9 @@
 {% block title %}
     <title>child html file</title>
 {% endblock %}
+
+{% block content %}
+<h2>welcome to child.html</h2>
+<a href="{% url 'myapp1:home' %}">Home</a>
+<a href="{% url 'sample' %}">Sample</a>
+{% endblock %}
